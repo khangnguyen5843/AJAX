@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Create Products</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="left">
+                <div class="logo" id="home">
+                    <a href="./index.html">Cybersoft</a>
+                </div>
+                <nav class="navbar">
+                    <a href="./index.html">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Form</a>
+                    <a href="#">Sports</a>
+                    <i class="fa fa-caret-down"></i>
+                </nav>
+            </div>
+            <form action="">
+                <input type="text" name="search" class="search" id="search" placeholder="Search">
+                <button class="btn-search" id="btn-search">Search</button>
+            </form>
+        </div>
+    </header>
+    <section class="products">
+        <div class="container">
+            <hr>
+            <div class="row">
+                <a href="#home">Home/</a>
+                <a href="#">Products/</a>
+                <a href="#">Create</a>
+            </div>
+            <hr>
+            <h2>Create product</h2>
+            <div class="product-form">
+                <form id="formProductInfo" action="">
+                    <div class="title">
+                        <h3>Product info</h3>
+                    </div>
+                    <div class="content">
+                        <div class="row form-group">
+                            <div class="col">
+                                <label for="">Id</label>
+                                <input type="text" name="" id="id" placeholder="Product id">
+                            </div>
+                            <div class="col">
+                                <label for="">Image</label>
+                                <input type="text" name="" id="img" placeholder="Product image link">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col">
+                                <label for="">Name</label>
+                                <input type="text" name="" id="name" placeholder="Product name">
+                            </div>
+                            <div class="col">
+                                <label for="">Product type</label>
+                                <select name="" id="type">
+                                    <option value="mobile">Mobile</option>
+                                    <option value="laptop">Laptop</option>
+                                    <option value="tablet">Tablet</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col">
+                                <label for="">Price</label>
+                                <input type="text" name="" id="price" placeholder="Product price">
+                            </div>
+                            <div class="col">
+                                <label for="">Description</label>
+                                <textarea name="" id="description" placeholder="Product description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="button">
+                            <button id="btnCreate" type="button" class="btn btn-primary">Create</button>
+                            <button id="btnUpdate" type="button" class="btn btn-success">Update</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="product-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableProductInfo"></tbody>
+                </table>
+            </div>
+            
+        </div>
+    </section>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./ProductsInfo.js"></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+.header{
+    background-color: #323639;
+    padding: 15px 0;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .container .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+}
+.header .navbar a{
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+.header .navbar a:hover{
+    color: #fff;
+}
+.header .navbar i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    color: gray;
+}
+.header .search{
+    padding: 10px;
+    border-radius: 8px;
+}
+.header .btn-search{
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: solid 1px green;
+    color: green;
+    background-color: #323639;
+}
+.header .btn-search:hover{
+    background-color: green;
+    color: #fff;
+}
+
+.products{
+    padding: 15px 0;
+}
+.products .row{
+    margin: 0;
+}
+.products .row a{
+    text-decoration: none;
+    color: #000;
+}
+.products .product-form{
+    border: solid 0.1px;
+}
+.products .product-form .title{
+    background-color: #323639;
+    color: #ffc44d;
+    padding: 10px 25px;
+}
+.products .product-form .col{
+    margin: 10px;
+}
+.products .product-form input,
+.products .product-form select,
+.products .product-form textarea{
+    width: 100%;
+}
+.products .product-form .footer {
+    background-color: rgba(193, 193, 193, 0.2);
+    margin-top: 25px;
+    padding: 15px 25px;
+    border-top: solid 0.1px;
+}
+
+.products .product-table{
+    margin-top: 20px;
+}
+.products .table thead{
+    color: #ffc44d;
+    background-color: gray;
+}
